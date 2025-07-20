@@ -1,0 +1,145 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f9fb;
+}
+
+nav {
+  background: linear-gradient(90deg, #3949ab 0%, #00bcd4 100%);
+  padding: 18px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(60, 80, 180, 0.07);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 28px;
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-bottom: 2px solid transparent;
+  transition: border 0.2s, color 0.22s;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #ffecb3;
+  border-bottom: 2px solid #ffd740;
+}
+
+.container {
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 8vw 30px 8vw;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(75, 80, 130, 0.11);
+  padding: 28px 30px 36px 30px;
+  max-width: 350px;
+  min-width: 260px;
+  flex: 1;
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content .main-img {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto 22px auto;
+}
+
+.card h2 {
+  color: #3949ab;
+  margin-bottom: 13px;
+}
+
+.card img {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 3px solid #00bcd4;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.11);
+}
+
+.card ul,
+.card ol {
+  text-align: left;
+  width: 100%;
+  margin: 16px 0 12px 0;
+  padding-left: 20px;
+  color: #252932;
+}
+
+.card ul li,
+.card ol li {
+  margin-bottom: 9px;
+  font-size: 16px;
+}
+
+.card form {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.card input[type="text"] {
+  padding: 10px 12px;
+  border: 1.3px solid #dde1e8;
+  border-radius: 5px;
+  background: #f3f7fa;
+  font-size: 15px;
+  width: 95%;
+  margin-bottom: 9px;
+  outline: none;
+  transition: border 0.19s;
+}
+
+.card input[type="text"]:focus {
+  border-color: #3949ab;
+}
+
+.card input[type="submit"] {
+  padding: 11px 26px;
+  font-size: 15px;
+  background: linear-gradient(90deg, #00bcd4 0, #3949ab 100%);
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: transform 0.10s, background 0.18s;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.card input[type="submit"]:hover {
+  background: linear-gradient(90deg, #ff6d00 0, #3949ab 100%);
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 7vw;
+  }
+
+  .card {
+    width: 94vw;
+    max-width: 420px;
+  }
+}
